@@ -52,8 +52,11 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
-      Python_Agent
-    environment: 'dhawalepraful1310ReactCode.default'
+      name: Azure Pipelines
+      demands:
+      - docker
+      - kubernetes
+    environment: 'ReactDemoApp.default'
     strategy:
       runOnce:
         deploy:
