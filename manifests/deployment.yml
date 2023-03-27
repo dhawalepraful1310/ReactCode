@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: mshahidreactcodes
+  name: reactcode
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mshahidreactcode
+      app: reactcode
   template:
     metadata:
       labels:
-        app: mshahidreactcode 
+        app: reactcode 
     spec:
       containers:
-        - name: mshahidreactcode 
-          image: reactdemo1.azurecr.io/mshahidreactcode
+        - name: reactcode 
+          image: dhawalepraful1310/reactcode
           ports:
-          - containerPort: 80
+          - containerPort: 3000
