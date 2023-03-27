@@ -11,8 +11,8 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'ea332e2b-316e-4f6f-95ba-ccf4077e7749'
-  imageRepository: 'mshahidreactcode'
+  dockerRegistryServiceConnection: 'dckr_pat_hEUYwTnPjfi6p5yTctIlfbr_02I'
+  imageRepository: 'dhawalepraful1310'
   containerRegistry: 'reactdemo1.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       Python_Agent
-    environment: 'mshahid1996ReactCode.default'
+    environment: 'dhawalepraful1310ReactCode.default'
     strategy:
       runOnce:
         deploy:
