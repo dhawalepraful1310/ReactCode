@@ -52,8 +52,7 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
-      vmImage: $(vmImageName)
-      parallel: 2   # <-- Add parallelism here
+      Test
     environment: 'dhawalepraful1310ReactCode-1713.test-demo'
     strategy:
       runOnce:
