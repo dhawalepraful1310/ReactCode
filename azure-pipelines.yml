@@ -53,6 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
+      parallel: 2
     environment: 'dhawalepraful1310ReactCode-1713.test-demo'
     strategy:
       runOnce:
